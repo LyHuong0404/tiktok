@@ -1,0 +1,63 @@
+.list_video_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: 356px;
+}
+
+.list_video_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 720px;
+    padding: 20px 0;
+}
+
+.video_container {
+    position: relative;
+    margin-bottom: 18px;
+    margin-right: 14px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.video {
+    width: 226px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video_user {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+}
+
+.avatar {
+    position: absolute;
+    bottom: 110px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nickname {
+    align-items: center;
+    max-width: 170px;
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.video_button {
+    min-width: 170px;
+    padding: 7px 8px;
+    border-radius: 4px;
+    font-size: 1.8rem;
+}

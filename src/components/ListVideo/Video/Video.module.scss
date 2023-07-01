@@ -1,0 +1,150 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 763px;
+    height: fit-content;
+    padding-top: 20px;
+    border-bottom: 1px solid #e3e3e4;
+}
+
+.header {
+    width: 600px;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--font-SofiaPro);
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.check {
+    margin-left: 5px;
+    color: rgb(32, 213, 236);
+    font-size: 1.4rem;
+}
+
+.fullname {
+    font-size: 1.4rem;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+
+.music {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 1);
+    margin-top: 4px;
+}
+.icon-music {
+    font-size: 1.4rem;
+    margin-right: 8px;
+}
+.description-video {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 1);
+}
+
+.video-container {
+    margin-top: 13px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Additional styling to resize the height */
+.video-container::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.follow-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    min-width: 95px;
+}
+
+.action-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 135px;
+    margin-left: -8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.action-btn {
+    font-size: 2.3rem;
+    min-width: 55px;
+    min-height: 55px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    font-size: 2.8rem;
+    margin: 10px -3px;
+}
+
+.icon-like {
+    font-size: 2.8rem;
+    margin: 10px -3px;
+    color: rgb(254, 44, 85);
+}
+
+.icon-comment {
+    font-size: 2.4rem;
+    margin: 10px -3px;
+}
+
+.amount {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,274 @@
+.content_container {
+    flex: 0 0 544px;
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px 0px;
+
+    button {
+        justify-content: center;
+    }
+
+    .comment_list_container {
+        width: 100%;
+        padding: 24px 32px;
+        box-sizing: border-box;
+        background-color: rgb(248, 248, 248);
+        border-top: 3px solid rgba(22, 24, 35, 0.2);
+        border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+        overflow: hidden auto;
+        flex-grow: 1;
+
+        .comment_item_container {
+            .comment_content_container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-bottom: 16px;
+                position: relative;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    margin-right: 12px;
+                }
+
+                .comment_container {
+                    flex: 1 1 auto;
+
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .comment_user {
+                        font-weight: 700;
+                        line-height: 25px;
+                    }
+                    .comment_nickname {
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .comment_text {
+                        font-size: 16px;
+                        line-height: 22px;
+                        white-space: pre-line;
+                        word-break: break-word;
+                        margin-bottom: 6px;
+                        max-width: 358px;
+                    }
+
+                    .created_at {
+                        color: rgba(22, 24, 35, 0.5);
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                .action_container {
+                    margin-left: 18px;
+                    padding-right: 2px;
+                    width: 24px;
+                    flex: 0 0 24px;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-align: center;
+                    align-items: center;
+
+                    .like_wrapper {
+                        color: rgba(22, 24, 35, 0.5);
+                        font-size: 12px;
+                        line-height: 17px;
+                        width: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        .icon {
+                            font-size: 20px;
+                        }
+
+                        .liked {
+                            color: rgb(254, 44, 85);
+                        }
+                    }
+                }
+            }
+
+            & + .comment_item_container {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .bottom_comment_container {
+        flex: 0 0 auto;
+        // background-color: rgb(255, 255, 255);
+        margin: 0px 30px;
+        padding: 25px 0px;
+        display: flex;
+
+        input {
+            border-radius: 10px;
+            background-color: rgba(22, 24, 35, 0.06);
+            padding: 10px 10px;
+            font-size: 16px;
+            width: 100%;
+
+            &:focus {
+                outline: rgba(22, 24, 35, 0.2) solid 1.5px;
+            }
+        }
+
+        Button {
+            margin-left: 25px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.button_login {
+    color: red;
+    font-size: 1.8rem;
+    margin: 10px 30px;
+    background-color: rgba(22, 24, 35, 0.06);
+    width: 89%;
+}
+.noti_text {
+    text-align: center;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 32px 0px;
+    margin-bottom: 15px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.name {
+    flex: 1 1 auto;
+    margin-right: 12px;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    font-family: var(--font-SofiaPro);
+    margin-right: 5px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.follow_btn {
+    min-height: 25px;
+    min-width: 106px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    user-select: none;
+    padding: 6px 0;
+}
+
+.full_name {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 1);
+}
+
+.check {
+    margin-left: 5px;
+    color: rgb(32, 213, 236);
+    font-size: 1.4rem;
+}
+
+.description_video {
+    font-size: 1.6rem;
+    color: rgba(22, 24, 35, 1);
+}
+.music {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(22, 24, 35, 1);
+    margin: 10px 0;
+}
+
+.icon_music {
+    font-size: 1.4rem;
+    margin-right: 8px;
+}
+
+.analysis {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.item {
+    display: flex;
+    width: 80px;
+    align-items: center;
+}
+
+.action_btn_like {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(22, 24, 35, 0.06);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.action_btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+
+.icon_comment {
+    font-size: 1.6rem;
+}
+
+.icon_comment_liked {
+    font-size: 1.6rem;
+    color: rgb(254, 44, 85);
+}
+
+.icon_like {
+    padding-top: 4px;
+    font-size: 2.2rem;
+}
+.icon_liked {
+    color: rgb(254, 44, 85);
+    padding-top: 4px;
+    font-size: 2.2rem;
+}
+.amount {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: rgba(22, 24, 35, 0.75);
+}

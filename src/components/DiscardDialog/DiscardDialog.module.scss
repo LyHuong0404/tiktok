@@ -1,0 +1,52 @@
+.wrapper {
+    display: none;
+}
+.wrapper.open {
+    display: block;
+    z-index: 10;
+}
+.discard_form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.discard_form_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.discard_form_body {
+    margin: auto;
+    min-width: 400px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.note {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 48px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}

@@ -1,0 +1,48 @@
+.account-item {
+    width: 320px;
+    height: 170px;
+    padding: 20px;
+    margin-top: -8px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.follow-btn {
+    font-size: 1.6rem;
+    width: 106px;
+    height: 34px;
+    user-select: unset;
+}
+.item-info {
+    margin-bottom: 10px;
+}
+.nickname {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--font-SofiaPro);
+    font-weight: 700;
+}
+.check {
+    margin-left: 5px;
+    color: rgb(32, 213, 236);
+    font-size: 1.4rem;
+}
+.name {
+    font-size: 1.4rem;
+    color: #161823bf;
+}
+.number-followers {
+    font-size: 1.7rem;
+}
+.label {
+    margin-right: 15px;
+}

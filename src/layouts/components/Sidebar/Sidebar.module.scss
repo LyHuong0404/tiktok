@@ -1,0 +1,30 @@
+.wrapper {
+    width: 356px;
+    margin-left: -18px;
+    overflow: hidden;
+    position: fixed;
+    max-height: calc(100vh - 60px);
+    padding: 20px 0 26px 8px;
+}
+
+.wrapper:hover {
+    overflow-y: scroll;
+}
+
+.login_wrapper {
+    border-top: 1px solid #e3e3e4;
+    padding: 20px 8px 24px 8px;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
+}
+
+.login_btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    min-width: 330px;
+    padding: 6px 8px;
+    margin-top: 20px;
+}

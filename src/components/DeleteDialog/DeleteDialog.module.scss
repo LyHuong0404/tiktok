@@ -1,0 +1,47 @@
+.wrapper {
+    display: none;
+}
+.wrapper.open {
+    display: block;
+    z-index: 10;
+}
+.delete_form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.delete_form_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.delete_form_body {
+    margin: auto;
+    width: 332px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding: 36px 32px;
+    text-align: center;
+}
+
+.btn {
+    color: rgba(22, 24, 35, 0.75);
+    height: 48px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
