@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const httprequest = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: process.env.REACT_APP_BACKEND_URL,
 });
 
 export const get = async (apipath, params = {}) => {
