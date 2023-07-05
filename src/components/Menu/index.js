@@ -1,14 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faCircleQuestion,
-    faCoins,
-    faEarthAsia,
-    faGear,
-    faKeyboard,
-    faLink,
-    faSignOut,
-    faUser,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEarthAsia, faGear, faLink, faSignOut, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
@@ -33,15 +24,15 @@ export const MENU_ITEMS = [
             ],
         },
     },
-    {
-        icon: <FontAwesomeIcon icon={faCircleQuestion} />,
-        title: 'Feedback and help',
-        to: '/feedback',
-    },
-    {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
-        title: 'Keyboard shortcuts',
-    },
+    // {
+    //     icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+    //     title: 'Feedback and help',
+    //     to: '/feedback',
+    // },
+    // {
+    //     icon: <FontAwesomeIcon icon={faKeyboard} />,
+    //     title: 'Keyboard shortcuts',
+    // },
 ];
 
 export const USER_MENU = [
@@ -51,14 +42,20 @@ export const USER_MENU = [
         to: '/profile',
     },
     {
-        icon: <FontAwesomeIcon icon={faCoins} />,
-        title: 'Get coins',
-        to: '/coin',
-    },
-    {
         icon: <FontAwesomeIcon icon={faGear} />,
         title: 'Settings',
         to: '/setting',
+        children: {
+            title: 'Manage account',
+            data: [
+                {
+                    title: 'Privacy',
+                },
+                {
+                    title: 'Business account',
+                },
+            ],
+        },
     },
     ...MENU_ITEMS,
     {

@@ -6,14 +6,14 @@
         transform: scale(var(--growth-to));
     }
 }
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }
 .wrapper {
     display: none;
 }
@@ -35,7 +35,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    animation: fadeIn linear 0.2s;
+    // animation: fadeIn linear 0.2s;
 }
 
 .auth_form_body {

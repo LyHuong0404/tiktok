@@ -58,7 +58,7 @@ function Header({ isDialogOpen }) {
                 </Link>
                 <Search />
                 <div className={cx('actions')}>
-                    {currentUser ? (
+                    {user ? (
                         <>
                             <Link to={config.routes.upload}>
                                 <Button className={cx('upload-btn')} rectangle>
