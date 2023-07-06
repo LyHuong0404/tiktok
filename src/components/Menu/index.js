@@ -24,15 +24,15 @@ export const MENU_ITEMS = [
             ],
         },
     },
-    // {
-    //     icon: <FontAwesomeIcon icon={faCircleQuestion} />,
-    //     title: 'Feedback and help',
-    //     to: '/feedback',
-    // },
-    // {
-    //     icon: <FontAwesomeIcon icon={faKeyboard} />,
-    //     title: 'Keyboard shortcuts',
-    // },
+    {
+        icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+        title: 'Feedback and help',
+        to: '/feedback',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faKeyboard} />,
+        title: 'Keyboard shortcuts',
+    },
 ];
 
 export const USER_MENU = [
