@@ -1,5 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEarthAsia, faGear, faLink, faSignOut, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+    faEarthAsia,
+    faGear,
+    faLink,
+    faSignOut,
+    faUser,
+    faCircleQuestion,
+    faKeyboard,
+} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
