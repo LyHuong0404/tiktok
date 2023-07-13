@@ -18,7 +18,7 @@ function Menu({ popperShare, children, items = [], hideOnClick = false, onChange
 
     const renderItems = () => {
         return current.data.map((item, index) => {
-            const isParent = !!item.children; // !!: chuyển sang kiểu boolean
+            const isParent = !!item.children;
             return (
                 <MenuItem
                     key={index}
@@ -57,7 +57,7 @@ function Menu({ popperShare, children, items = [], hideOnClick = false, onChange
                     </PopperWrapper>
                 </div>
             )}
-            onHide={() => setHistory((prev) => prev.slice(0, 1))} //trở về trang đầu tiên
+            onHide={() => setHistory((prev) => prev.slice(0, 1))}
         >
             {children}
         </Tippy>

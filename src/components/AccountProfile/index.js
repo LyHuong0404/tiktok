@@ -94,7 +94,7 @@ function AccountProfile() {
                                 className={cx('button-follow')}
                                 onClick={() => setIsLoginDialogOpen(!isLoginDialogOpen)}
                             >
-                                {user?.is_followed ? 'Following' : 'Follow'}
+                                Follow
                             </Button>
                         )}
                     </div>
